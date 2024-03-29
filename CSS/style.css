@@ -1,0 +1,369 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS Reset */
+
+
+body {
+	font-family: "微軟正黑體" , sans-serif;
+}
+
+.top {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin: 20px 10px;
+}
+
+/* socialMedia */
+.con-socialMedia {
+	background-color: #F6F6F8;
+}
+.socialMedia ul {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 75%;
+	gap: 12px;
+	padding: 4px;
+}
+.socialMedia li {
+	display: flex;
+}
+.socialMedia a {
+	text-decoration: none;
+	padding: 4px;
+}
+.facebook {
+	color: #4267B2;
+}
+.twitter {
+	color: #1DA1F2;
+}
+.logo-socialMedia {
+	padding: 4px;
+}
+
+/* header */
+.header {
+	background-color: #fff;
+}
+.header div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 18px;
+	padding-bottom: 22px;
+}
+@media (max-width: 600px) {
+	.header div {
+		width: 90vw;
+	}
+}
+.header ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+@media (max-width: 600px) {
+	.header ul {
+		gap: 10px;
+	}
+}
+.logo {
+	width: 151px;
+	height: 36px;
+	background-image: url("../img/hexschool-logo.png");
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.header li a {
+	text-decoration: none;	
+	font-size: 16px;
+	font-weight: 700;
+	color: #00251A;
+	padding: 2px 3px;
+}
+.header li a:hover{
+	background-color: #00251A;
+	color: #fff;
+	border-radius: 5px;
+	padding: 2px 3px;
+	transition: 0.7s;
+}
+
+.menu ul {
+	display: none;
+	position: absolute;
+	margin-top: 5px;
+}
+.menu li {
+	position: relative;
+	z-index: 2;
+}
+.dropdown-open {
+	background-color: #F6F6F8;
+}
+.dropdown-open li {
+	border-bottom: 1px solid #0b6147;
+	padding: 7px 7px;
+}
+
+/* background */
+.swiper {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 30px;
+  }
+  .swiper h1 {
+	position: absolute;
+	z-index: 2;
+	top: 1rem;
+	bottom: 1rem;
+	width: 100%;
+	background: #5c565662;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+	align-self: center;
+  }
+  .swiper-wrapper img {
+	width: 100%;
+  }
+  
+@media (max-width: 600px) {
+	.title-background {
+		background-position: center;
+		background-size: auto;
+	}
+	.swiper h1 {
+		font-size: 20px;
+	}
+}
+
+.main-section {
+	margin: 0 auto;
+	width: 50%;
+}
+@media (max-width: 600px) {
+	.main-section {
+		width: 90vw;
+	}
+}
+/* 3個Icon區域 */
+.icon-section {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+.icon {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+	margin-bottom: 60px;
+	line-height: 1.2;
+	min-width: 150px;
+}
+@media (max-width: 600px) {
+	.icon-section {
+		display: block;
+		margin: 0 10%;
+	}
+}
+.img-icon {
+	max-width: 100%;
+	max-height: 100%;
+}
+.title-icon {
+	font-size: 20px;
+	font-weight: 700;
+	padding: 6px 20px;
+}
+.content-icon {
+	padding: 6px 20px 20px 20px;
+}
+.title-icon3 {
+	font-size: 20px;
+	font-weight: 700;
+	padding: 43px 20px 12px 20px;
+}
+.list-icon3 {
+	list-style-type: disc;
+}
+
+/* 比較表格區域 */
+.compare-table{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.compare-table th, .compare-table td {
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	text-align: left;
+	padding: 6px 0;
+}
+.title-table {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 24px;
+}
+.table-header {
+	font-weight: 700;
+}
+.marked {
+	font-weight: 700;
+	color: #00CC99;
+}
+
+/* 表單問卷區域 */
+.survey {
+	background:linear-gradient(#E4FFF8, #A2DDCE)
+}
+.title-survey {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	padding: 36px 0 28px 0;
+}
+.survey-area {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+@media (max-width: 600px) {
+	.survey-area {
+		flex-direction: column;
+		width: 90vw;
+	}
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+}
+@media (max-width: 600px) {
+	.info {
+		align-items: center;
+		width: 60%;
+	}
+}
+.info label {
+	padding-bottom: 8px;
+}
+#name {
+	margin-bottom: 16px;
+}
+#phone {
+	margin-bottom: 16px;
+}
+.text-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.text-area label {
+	padding-bottom: 8px;
+}
+.button-submit {
+	display: flex;
+	justify-content: center;
+	padding: 41px 0 46px;
+}
+.button-submit button {
+	width: 159px;
+	height: 38px;
+	border-radius: 3px;
+	border: 1px solid #00251A;
+	background: #00251A;
+	color: #FFFFFF;
+	text-align: center;
+}
+.button-submit button:hover {
+	cursor: pointer;
+}
+
+/* Footer */
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 22px 0;
+}
+@media (max-width: 600px) {
+	.footer {
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+@media (max-width: 600px){
+	.footer p {
+		line-height: 1.5;
+	}
+}
+
+.footer a {
+	text-decoration: none;
+}
+.contact-info {
+	color: #00CC99;
+}
